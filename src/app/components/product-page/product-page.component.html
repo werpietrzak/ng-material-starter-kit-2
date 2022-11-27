@@ -1,0 +1,6 @@
+<ng-container *ngIf="details$ | async as item">
+  <img [src]="item.image" [alt]="item.title" style="width: 150px" />
+  <h1>{{ item.title }}</h1>
+  <h2>${{ item.price }}</h2>
+  <p>{{ item.description }}</p>
+</ng-container>
