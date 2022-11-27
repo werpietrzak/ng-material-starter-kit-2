@@ -1,0 +1,11 @@
+<h1>Categories</h1>
+<mat-chip-list aria-label="Fish selection">
+  <mat-chip *ngFor="let item of categories$ | async">
+   {{item}}
+  </mat-chip>
+</mat-chip-list>
+<a routerLink="/add-product">
+  <button>
+    Add new product
+  </button>
+</a>
